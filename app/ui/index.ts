@@ -1,4 +1,3 @@
-import Icon from "./Icon";
 import HeroSection from "@/app/ui/hero-section";
 import AboutMe from "@/app/ui/about-me";
 import MyServices from "@/app/ui/my-services";
@@ -12,9 +11,9 @@ import Newsletter from "@/app/ui/newsletter";
 import Footer from "@/app/ui/footer";
 import Header from "@/app/ui/header";
 import SideDrawer from "@/app/ui/side-drawer";
+import IconTemp from "@/app/ui/icon-temp";
 
 export {
-    Icon,
     HeroSection,
     AboutMe,
     MyServices,
@@ -27,5 +26,6 @@ export {
     Newsletter,
     Footer,
     Header,
-    SideDrawer
+    SideDrawer,
+    IconTemp
 };
