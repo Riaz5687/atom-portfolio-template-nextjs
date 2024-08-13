@@ -1,43 +1,81 @@
+import React from "react";
+import {
+    blogAuthor, iconAward,
+    iconClose,
+    iconContentBlack,
+    iconContentWhite,
+    iconDesignBlack,
+    iconDesignWhite,
+    iconDevelopmentBlack,
+    iconDevelopmentWhite,
+    iconEmailBlack,
+    iconEmailWhite,
+    iconGraphicsBlack,
+    iconGraphicsWhite, iconHappy,
+    iconMobileBlack,
+    iconMobileWhite, iconProject, iconPuzzle,
+    logo,
+    logoAmazon,
+    logoApple,
+    logoCocaCola, logoFedex, logoMicrosoft,
+    logoNetflix, logoSpotify, logoStripe,
+    portfolioApple,
+    portfolioFedex,
+    portfolioMicrosoft,
+    portfolioStripe
+} from '@/public/assets/img'
 import Image from "next/image";
-import NameSection from "@/app/ui/name-section";
-import ImageSection from "@/app/ui/image-section";
-import Resume from "@/app/ui/resume";
+import {
+    Contact,
+    Footer, Header,
+    HeroSection,
+    MyBlog,
+    MyClients,
+    MyPortfolio,
+    MyWork,
+    Newsletter, SideDrawer,
+    Statistics,
+    AboutMe
+} from "@/app/ui";
+import HereIAmGoodAt from "@/app/ui/my-services";
 
 export default function Home() {
-  return (
-      <div>
-        {/*Name section */}
-        <NameSection />
-        {/*/Name Section */}
+    return (
+        <div className={'bg-white'}>
+            <Header />
 
-        {/*image section */}
-        <ImageSection />
-        {/*/image section*/}
+            <SideDrawer />
 
-        <hr className="border-gray-400 mx-44" />
 
-        {/*Resume */}
-        <Resume />
-        <hr className="border-gray-400 mx-44" />
-        {/*Resume */}
+            <div>
+                <HeroSection />
 
-        <section className="px-20 mt-10">
-          <h4 className="mb-8 text-3xl font-bold text-center md:text-left">Education</h4>
-          <div className="grid grid-cols-1 md:grid-cols-6 my-10">
-            <div className="flex flex-col col-span-2 mb-4 md:mb-0">
-              <h5 className="text-xl md:text-2xl  font-bold">B.S. Computer Science</h5>
-              <h6 className="text-lg font-bold">Harward University</h6>
-              <p>Jan 2015 - present</p>
+                <AboutMe />
+
+                <HereIAmGoodAt />
+
+                <MyPortfolio />
+
+                <MyClients />
+
+                <MyWork />
+
+                <Statistics />
+
+                <MyBlog />
+
+                <Contact />
+
+                <div className="h-72 bg-cover bg-center bg-no-repeat sm:h-64 md:h-72 lg:h-96 bg-[url(/assets/img/map.png)]"></div>
+
+                <Newsletter />
             </div>
-            <div className="flex flex-col col-span-4 ">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet deleniti tempore veritatis
-                adipisci accusantium voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id cum minus sit
-                laudantium ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi non incidunt
-                voluptates molestiae delectus nulla quisquam aperiam voluptas tempora distinctio! Ipsa cupiditate
-                harum voluptates praesentium. Suscipit itaque officiis odio ut!</p>
-            </div>
-          </div>
-        </section>
-      </div>
-  );
+
+            <Footer />
+
+
+        </div>
+
+
+    );
 }

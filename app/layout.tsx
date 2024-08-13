@@ -19,15 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <div className="relative text-gray-800 bg-gray-50">
-        {/*Navbar */}
-        <Header />
+
 
         {children}
-        <Footer />
-        <div className="h-80">
-        </div>
-      </div>
 
       </body>
     </html>
